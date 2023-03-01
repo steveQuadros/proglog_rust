@@ -1,0 +1,2 @@
+- create struct for server to hold ref to the log
+- add some tests and see if you can figure out how to serialize Record vec<u8> into String for response
