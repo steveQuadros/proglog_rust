@@ -1,9 +1,0 @@
-mod log;
-mod server;
-
-use crate::server::start;
-
-#[tokio::main]
-async fn main() -> Result<()> {
-    server::start()
-}
