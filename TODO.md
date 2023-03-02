@@ -1,2 +1,5 @@
 - create struct for server to hold ref to the log
+  - https://www.fpcomplete.com/blog/ownership-puzzle-rust-async-hyper/ (weird ownership shit?)
+  - https://users.rust-lang.org/t/cannot-move-out-of-a-captured-variable-in-an-fnmut-closure/51859 (Actual solution?)
 - add some tests and see if you can figure out how to serialize Record vec<u8> into String for response
+- some intersting hyper stuff here - found the routing example in server.rs - https://dzx.fr/blog/how-to-handle-http-requests-with-rust-and-hyper/#path-segmentation

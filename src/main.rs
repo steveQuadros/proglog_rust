@@ -1,9 +1,12 @@
 mod log;
 mod server;
 
-// #[tokio::main]
-// async fn main() -> Result<()> {
-//     server::start()
-// }
+use crate::log::log::Log;
+use crate::server::Result as ServerResult;
+use std::sync::Arc;
 
-fn main() {}
+#[tokio::main]
+async fn main() -> ServerResult<()> {
+    let log = Arc::new(Log::new());
+    server::start(log).await
+}
