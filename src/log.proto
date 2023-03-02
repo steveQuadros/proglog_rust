@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package log.v1;
+package proglog_rust.log;
 
 message Record {
   bytes value = 1;

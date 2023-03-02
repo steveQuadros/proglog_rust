@@ -1,5 +1,5 @@
 use std::io::Result;
 fn main() -> Result<()> {
-    prost_build::compile_protos(&["src/api/v1/log.proto"], &["src/"])?;
+    prost_build::compile_protos(&["src/log.proto"], &["src/"])?;
     Ok(())
 }
